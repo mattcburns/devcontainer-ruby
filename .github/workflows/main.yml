@@ -1,0 +1,15 @@
+name: 'Build and publish dev container'
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pre-build dev container image
+        uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/mattcburns/devcontainer-ruby
+          cacheFrom: ghcr.io/mattcburns/devcontainer-ruby
+          push: always
