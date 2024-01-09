@@ -6,7 +6,8 @@
     "customizations": {
 		"vscode": {
 			"extensions": [
-				"Shopify.ruby-extensions-pack"
+				"Shopify.ruby-extensions-pack",
+                "humao.rest-client"
 			]
 		}
 	},
