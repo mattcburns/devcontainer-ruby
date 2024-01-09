@@ -11,7 +11,7 @@ devcontainer.json
 {
     "name": "Ruby",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": ""
+    "image": "ghcr.io/mattcburns/devcontainer-ruby:latest"
 
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
