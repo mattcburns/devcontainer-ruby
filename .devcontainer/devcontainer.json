@@ -6,14 +6,10 @@
     "customizations": {
 		"vscode": {
 			"extensions": [
-				"Shopify.ruby-extensions-pack"
+				"Shopify.ruby-extensions-pack",
+        "humao.rest-client"
 			]
 		}
 	},
-    "features": {
-        "ghcr.io/devcontainers/features/ruby:1": {
-            "version": "3.2.2"
-        }
-    },
-    "remoteUser": "root"
+  "remoteUser": "root"
 }

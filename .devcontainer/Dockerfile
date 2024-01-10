@@ -36,3 +36,17 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Ruby
+RUN wget https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.2.tar.gz \
+    && tar -xzvf ruby-3.2.2.tar.gz \
+    && cd ruby-3.2.2 \
+    && ./configure \
+    && make \
+    && make install \
+    && cd .. \
+    && rm -rf ruby-3.2.2 \
+    && rm ruby-3.2.2.tar.gz
+
+# Install bundler
+RUN gem install bundler
