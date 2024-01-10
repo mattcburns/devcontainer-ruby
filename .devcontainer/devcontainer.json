@@ -11,5 +11,10 @@
 			]
 		}
 	},
+    "features": {
+        "ghcr.io/devcontainers/features/ruby:1": {
+            "version": "3.2.2"
+        }
+    },
     "remoteUser": "root"
 }
